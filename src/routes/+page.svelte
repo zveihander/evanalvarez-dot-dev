@@ -34,12 +34,11 @@
 		<p style="color: var(--fg-muted)">
 			<a href="mailto:evanalvarez@tutamail.com" rel="me">email</a>
 			<span class="sep">/</span>
-			<a href="https://github.com/zveihander" target="_blank" rel="me noopener noreferrer">github</a>
+			<a href="https://github.com/zveihander" target="_blank" rel="me noopener noreferrer">github</a
+			>
 			<span class="sep">/</span>
-			<a
-				href="https://www.instagram.com/evan.alvarizz"
-				target="_blank"
-				rel="me noopener noreferrer">instagram</a
+			<a href="https://www.instagram.com/evan.alvarizz" target="_blank" rel="me noopener noreferrer"
+				>instagram</a
 			>
 		</p>
 		<p class="pgp-fprint">

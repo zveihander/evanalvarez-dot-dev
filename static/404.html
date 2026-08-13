@@ -1,131 +1,170 @@
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<meta name="theme-color" content="#282828" media="(prefers-color-scheme: dark)" />
-		<meta name="theme-color" content="#fbf1c7" media="(prefers-color-scheme: light)" />
-		<title>evan alvarez - not found</title>
-		<link rel="icon" href="/favicon.ico" sizes="32x32" />
-		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-		<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-		<style>
-			*,
-			*::before,
-			*::after {
-				box-sizing: border-box;
-			}
 
-			@font-face {
-				font-family: 'Fraunces';
-				src: url('/fonts/fraunces-latin-500.woff2') format('woff2');
-				font-weight: 500;
-				font-style: normal;
-				font-display: swap;
-			}
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#282828" media="(prefers-color-scheme: dark)" />
+    <meta name="theme-color" content="#fbf1c7" media="(prefers-color-scheme: light)" />
+    <title>evan alvarez - not found</title>
+    <link rel="icon" href="/favicon.ico" sizes="32x32" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <style>
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+        }
 
-			@font-face {
-				font-family: 'Newsreader';
-				src: url('/fonts/newsreader-latin_latinext-regular.woff2') format('woff2');
-				font-weight: 400;
-				font-style: normal;
-				font-display: swap;
-			}
+        @font-face {
+            font-family: 'Fraunces';
+            src: url('/fonts/fraunces-latin-500.woff2') format('woff2');
+            font-weight: 500;
+            font-style: normal;
+            font-display: swap;
+        }
 
-			:root {
-				--bg: #282828;
-				--fg: #ebdbb2;
-				--fg-muted: #a89984;
-				--accent-green: #8ec07c;
-				--accent-purple: #d3869b;
-				--font-display: 'Fraunces', Georgia, serif;
-				--font-body: 'Newsreader', Georgia, serif;
-			}
+        @font-face {
+            font-family: 'Newsreader';
+            src: url('/fonts/newsreader-latin_latinext-regular.woff2') format('woff2');
+            font-weight: 400;
+            font-style: normal;
+            font-display: swap;
+        }
 
-			@media (prefers-color-scheme: light) {
-				:root {
-					--bg: #fbf1c7;
-					--fg: #3c3836;
-					--fg-muted: #7c6f64;
-					--accent-green: #427b58;
-					--accent-purple: #8f3f71;
-				}
-			}
+        :root {
+            --bg: #282828;
+            --fg: #ebdbb2;
+            --fg-muted: #a89984;
+            --accent-green: #8ec07c;
+            --accent-purple: #d3869b;
+            --font-display: 'Fraunces', Georgia, serif;
+            --font-body: 'Newsreader', Georgia, serif;
+        }
 
-			html {
-				color-scheme: light dark;
-				background-color: var(--bg);
-				color: var(--fg);
-			}
+        @media (prefers-color-scheme: light) {
+            :root {
+                --bg: #fbf1c7;
+                --fg: #3c3836;
+                --fg-muted: #7c6f64;
+                --accent-green: #427b58;
+                --accent-purple: #8f3f71;
+            }
+        }
 
-			body {
-				margin: 0;
-				font-family: var(--font-body);
-				font-size: 1.1rem;
-			}
+        html {
+            color-scheme: light dark;
+            background-color: var(--bg);
+            color: var(--fg);
+        }
 
-			h1 {
-				font-family: var(--font-display);
-				font-weight: 500;
-				font-size: 2.8rem;
-				margin: 0 0 0.2rem 0;
-			}
+        body {
+            margin: 0;
+            font-family: var(--font-body);
+            font-size: 1.1rem;
+        }
 
-			p {
-				line-height: 1.15;
-				margin: 0 0 0.8rem 0;
-			}
+        h1 {
+            font-family: var(--font-display);
+            font-weight: 500;
+            font-size: 2.8rem;
+            margin: 0 0 0.2rem 0;
+        }
 
-			a {
-				color: var(--accent-green);
-				text-decoration: none;
-			}
+        p {
+            line-height: 1.15;
+            margin: 0 0 0.8rem 0;
+        }
 
-			a:focus {
-				color: var(--accent-purple);
-			}
+        a {
+            color: var(--accent-green);
+            text-decoration: none;
+        }
 
-			.wrapper {
-				display: flex;
-				flex-direction: column;
-				gap: 0.8rem;
-				max-width: 720px;
-				margin: 0 auto;
-				padding: 1.5rem 1.4rem;
-			}
+        a:focus {
+            color: var(--accent-purple);
+        }
 
-			.sep {
-				margin: 0 0.25rem;
-			}
+        .wrapper {
+            display: flex;
+            flex-direction: column;
+            gap: 0.8rem;
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 1.5rem 1.4rem;
+        }
 
-			hr {
-				border: none;
-				border-top: 1px solid var(--bg-lighter, #504945);
-				margin: 0.3rem 0 1.3rem 0;
-			}
+        .sep {
+            margin: 0 0.25rem;
+        }
 
-			footer {
-				margin-top: 4em;
-			}
-		</style>
-	</head>
+        hr {
+            border: none;
+            border-top: 1px solid var(--bg-lighter, #504945);
+            margin: 0.3rem 0 1.3rem 0;
+        }
 
-	<body>
-		<div class="wrapper">
-			<header>
-				<h1>404</h1>
-				<p>this page doesn't exist.</p>
-				<p style="color: var(--fg-muted)">
-					<a href="/">home</a>
-					<span class="sep">/</span>
-					<a href="/colophon">colophon</a>
-				</p>
-			</header>
-			<footer>
-				<hr />
-				<p style="color: var(--fg-muted); font-size: 0.95rem;">&copy; 2026 evan alvarez</p>
-			</footer>
-		</div>
-	</body>
+        footer {
+            margin-top: 4em;
+        }
+
+        .error-row {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        .error-row header {
+            flex: 1;
+            min-width: 200px;
+        }
+
+        .error-gif {
+            display: block;
+            width: 160px;
+            height: 160px;
+            object-fit: cover;
+            flex-shrink: 0;
+            border-radius: 6px;
+            border: 1px solid var(--bg-lighter, #504945);
+            box-shadow: 0 6px 20px -8px rgba(0, 0, 0, 0.45);
+            filter: grayscale(0.25) contrast(1.03);
+        }
+
+        @media (max-width: 480px) {
+            .error-gif {
+                width: 110px;
+                height: 110px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="error-row">
+            <header>
+                <h1>404</h1>
+                <p>this page doesn't exist.</p>
+                <p style="color: var(--fg-muted)">
+                    <a href="/">home</a>
+                    <span class="sep">/</span>
+                    <a href="/colophon">colophon</a>
+                </p>
+            </header>
+            <video class="error-gif" autoplay loop muted playsinline aria-hidden="true">
+                <source src="/lain/404.webm" type="video/webm" />
+                <source src="/lain/404.mp4" type="video/mp4" />
+            </video>
+        </div>
+        <footer>
+            <hr />
+            <p style="color: var(--fg-muted); font-size: 0.95rem;">&copy; 2026 evan alvarez</p>
+        </footer>
+    </div>
+</body>
+
 </html>

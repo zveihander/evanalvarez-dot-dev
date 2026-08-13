@@ -260,5 +260,13 @@
 		footer {
 			margin-top: 4em;
 		}
+
+		.media-frame {
+			display: block;
+			border-radius: 6px;
+			border: 1px solid var(--bg-lighter);
+			box-shadow: 0 6px 20px -8px rgba(0, 0, 0, 0.45);
+			filter: grayscale(0.25) contrast(1.03);
+		}
 	}
 </style>

@@ -1,6 +1,7 @@
 <script>
 	import { resolve } from '$app/paths';
 	import { SITE_URL, SITE_NAME } from '$lib/site';
+	import lainStill from '$lib/assets/colophon.jpg?enhanced';
 
 	const description = "How evan alvarez's website was built.";
 </script>
@@ -73,22 +74,30 @@
 		<hr style="margin-top: 1.2rem;" />
 		<section>
 			<h2 class="label">notes</h2>
-			<dl class="facts">
-				<div class="fact">
-					<dt>analytics</dt>
-					<dd>never.</dd>
-				</div>
-				<div class="fact">
-					<dt>source</dt>
-					<dd>
-						<a
-							href="https://github.com/zveihander/evanalvarez-dot-dev"
-							target="_blank"
-							rel="noopener noreferrer">github ↗</a
-						>
-					</dd>
-				</div>
-			</dl>
+			<div class="notes-row">
+				<dl class="facts">
+					<div class="fact">
+						<dt>analytics</dt>
+						<dd>never.</dd>
+					</div>
+					<div class="fact">
+						<dt>source</dt>
+						<dd>
+							<a
+								href="https://github.com/zveihander/evanalvarez-dot-dev"
+								target="_blank"
+								rel="noopener noreferrer">github ↗</a
+							>
+						</dd>
+					</div>
+				</dl>
+				<enhanced:img
+					class="media-frame lain-still"
+					src={lainStill}
+					sizes="(max-width: 480px) 76px, 108px"
+					alt=""
+				/>
+			</div>
 		</section>
 		<hr style="margin-top: 1.2rem;" />
 	</main>
@@ -126,6 +135,31 @@
 	.fact dd {
 		margin: 0;
 		color: var(--fg);
+	}
+
+	.notes-row {
+		display: flex;
+		align-items: flex-start;
+		justify-content: space-between;
+		gap: 1.2rem;
+	}
+
+	.notes-row .facts {
+		flex: 1;
+	}
+
+	.lain-still {
+		width: 108px;
+		height: 108px;
+		object-fit: cover;
+		flex-shrink: 0;
+	}
+
+	@media (max-width: 480px) {
+		.lain-still {
+			width: 76px;
+			height: 76px;
+		}
 	}
 
 	h2.label {
