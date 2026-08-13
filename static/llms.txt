@@ -1,0 +1,6 @@
+# evan alvarez
+
+> Systems programmer, open source enthusiast, and GNU shill. Studying engineering at Texas A&M.
+
+- [home](https://evanalvarez.dev/): bio, contact links, PGP fingerprint, and projects
+- [colophon](https://evanalvarez.dev/colophon): how this site is built
