@@ -10,6 +10,7 @@
 	<title>evan alvarez</title>
 	<meta name="description" content={description} />
 	<link rel="canonical" href={SITE_URL + '/'} />
+	<link rel="pgp-key" href="/pgp-key.asc" />
 	<meta property="og:type" content="website" />
 	<meta property="og:site_name" content={SITE_NAME} />
 	<meta property="og:title" content="evan alvarez" />
@@ -31,12 +32,14 @@
 			>. mostly uses languages like C, Zig, and Rust.
 		</p>
 		<p style="color: var(--fg-muted)">
-			<a href="mailto:evanalvarez@tutamail.com">email</a>
+			<a href="mailto:evanalvarez@tutamail.com" rel="me">email</a>
 			<span class="sep">/</span>
-			<a href="https://github.com/zveihander" target="_blank" rel="noopener noreferrer">github</a>
+			<a href="https://github.com/zveihander" target="_blank" rel="me noopener noreferrer">github</a>
 			<span class="sep">/</span>
-			<a href="https://www.instagram.com/evan.alvarizz" target="_blank" rel="noopener noreferrer"
-				>instagram</a
+			<a
+				href="https://www.instagram.com/evan.alvarizz"
+				target="_blank"
+				rel="me noopener noreferrer">instagram</a
 			>
 		</p>
 		<p class="pgp-fprint">

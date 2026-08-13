@@ -1,7 +1,7 @@
 import type { Handle } from '@sveltejs/kit';
 
 export const handle: Handle = async ({ event, resolve }) => {
-	return resolve(event, {
+	const response = await resolve(event, {
 		preload: ({ type, path }) => {
 			if (type !== 'font') return false;
 			return (
@@ -11,4 +11,6 @@ export const handle: Handle = async ({ event, resolve }) => {
 			);
 		}
 	});
+	response.headers.set('X-Clacks-Overhead', 'GNU Terry Pratchett');
+	return response;
 };
