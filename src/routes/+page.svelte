@@ -1,6 +1,9 @@
 <script lang="ts">
 	import { resolve } from '$app/paths';
 	import { SITE_URL, SITE_NAME } from '$lib/site';
+	import type { PageData } from './$types';
+
+	let { data }: { data: PageData } = $props();
 
 	const fingerprint = 'D894 D8F3 FCD0 4622 F05E AD16 D461 E3C3';
 	const description = 'Evan Alvarez is a systems programmer studying engineering at Texas A&M.';
@@ -103,6 +106,20 @@
 		<hr />
 		<section>
 			<h2>writings</h2>
+			{#if data.posts.length}
+				<ul class="plist">
+					{#each data.posts as post (post.slug)}
+						<li class="plist-item">
+							<span class="plist-name">{post.title}</span>
+							<span class="plist-desc">{post.description}</span>
+							<a href={resolve('/blog/[slug]', { slug: post.slug })}>read ↗</a>
+						</li>
+					{/each}
+				</ul>
+				<a class="viewall" href={resolve('/blog')}>all writings ↗</a>
+			{:else}
+				<p class="plist-desc">nothing here yet.</p>
+			{/if}
 		</section>
 	</main>
 	<footer>

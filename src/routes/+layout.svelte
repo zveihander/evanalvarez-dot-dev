@@ -257,6 +257,13 @@
 			min-width: 0;
 		}
 
+		.viewall {
+			align-self: flex-end;
+			color: var(--fg-muted);
+			font-family: var(--font-mono);
+			font-size: 0.85rem;
+		}
+
 		footer {
 			margin-top: 4em;
 		}
